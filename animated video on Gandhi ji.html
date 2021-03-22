@@ -1,0 +1,71 @@
+<button onclick="openFullscreen();">Open Video in Fullscreen Mode</button>
+<p><strong></strong>Short Animated Video On Mahatma Gandhai.</p>
+
+<video width="100%" controls id="myvideo">
+  <source src="./video/The Story of Mahatma Gandhi - Father of Nation - Happy Gandhi jayanthi 2020 - KidsOne.mp4" type="video/mp4">
+  
+  Your browser does not support the video tag.
+</video>
+
+
+<script>
+    var elem = document.getElementById("myvideo");
+
+    function openFullscreen() {
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+        }
+    }
+</script>
+
+<p> Tip: Press the "Esc" key to exit full screen</p>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+        
+        .button:hover {
+            background-color: #3e8e41
+        }
+        
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <a href="../DTFUYYU/Download.html" class="button">Click Here To Download Some Images Of Mahatma Gandhai</a>
+
+
+</body>
+
+</html>
+
+</body>
+
+</html>
